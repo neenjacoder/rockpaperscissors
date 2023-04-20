@@ -13,28 +13,33 @@
         <div class="title">Rock Paper Scissors</div>
         <div class="players">
             <div class="user">
-                <div class="userrock">
-                    <div class="rockimage">
-                        <img src="rock.png" alt="rock">
-                    </div>
-                    <div class="rockbutton">
-                        <button class="Rock" type="button">Rock</button>
-                    </div>
+                <div class="messagetitle">
+                    Make Your Choice:
                 </div>
-                <div class="userpaper">
-                    <div class="paperimage">
-                        <img src="paper.png" alt="paper">
+                <div class="userchoices">
+                    <div class="userrock">
+                        <div class="rockimage">
+                            <img src="rock.png" alt="rock">
+                        </div>
+                        <div class="rockbutton">
+                            <button onclick = "computerchoice()" class="Rock" type="button">Rock</button>
+                        </div>
                     </div>
-                    <div class="paperbutton">
-                        <button class="Paper" type="button">Paper</button>
+                    <div class="userpaper">
+                        <div class="paperimage">
+                            <img src="paper.png" alt="paper">
+                        </div>
+                        <div class="paperbutton">
+                            <button onclick = "computerchoice()" class="Paper" type="button">Paper</button>
+                        </div>
                     </div>
-                </div>
-                <div class="userscissors">
-                    <div class="scissorsimage">
-                        <img src="scissors.png" alt="scissors">
-                    </div>
-                    <div class="scissorsbutton">
-                        <button class="Scissors" type="button">Scissors</button>
+                    <div class="userscissors">
+                        <div class="scissorsimage">
+                            <img src="scissors.png" alt="scissors">
+                        </div>
+                        <div class="scissorsbutton">
+                            <button onclick = "computerchoice()" class="Scissors" type="button">Scissors</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -42,9 +47,15 @@
                 <div class="messagetitle">
                     The Computer Chose:
                 </div>
+                <div class="messagetitleauto">
+                    <script>
+                        function computerchoicetext () {
+
+                        }
+                    </script>
+                </div>
                 <div class="image">
-                    Placeholder Image
-                    <!-- Add code here to show image of what computer chooses -->
+                    Placeholder for image  
                 </div>
                 <div class="message">
                     Placeholder For Message
