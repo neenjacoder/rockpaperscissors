@@ -72,25 +72,25 @@ function computergame(userchoice) {
     ];
     var randomNumber = Math.floor(Math.random()*textArray.length);
     if (randomNumber == userchoice)  {
-        console.log("tie game");
+        // computer and user chose the same
         return "user";
     } else if (userchoice == 0 && randomNumber == 1) {
-        console.log("user chose rock comp chose paper, user loses");
+        // rock vs paper, computer wins
         return "computer";
     } else if (userchoice == 0 && randomNumber == 2) {
-        console.log("user chose rock comp chose scissors, user wins");
+        // rock vs scissors, user wins
         return "user";
     } else if (userchoice == 1 && randomNumber == 0) {
-        console.log("user chose paper comp chose rock, user wins");
+        // paper vs rock, user wins
         return "user";
     } else if (userchoice == 1 && randomNumber == 2) {
-        console.log("user chose paper comp chose scissors, user loses");
+        // paper vs scissors, computer wins
         return "computer";
     } else if (userchoice == 2 && randomNumber == 0) {
-        console.log("user chose scissors, comp chose rock, user loses");
+        // scissors vs rock, computer wins
         return "computer";
     } else {
-        console.log("user chose scissors, comp chose paper, user wins");
+        // scissors vs paper, user wins
         return "user";
     }
 }
