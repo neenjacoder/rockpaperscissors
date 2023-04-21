@@ -49,8 +49,14 @@
                 </div>
                 <div class="messagetitleauto">
                     <script>
-                        function computerchoicetext () {
-
+                        function computertext (computerchoice) {
+                            if (computerchoice == "rock") {
+                                console.log("text for rock");
+                            } else if (computerchoice == "paper") {
+                                console.log("text for paper");
+                            } else {
+                                console.log("text for scissors");
+                            }
                         }
                     </script>
                 </div>
