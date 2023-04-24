@@ -1,9 +1,11 @@
 // Global Values
 var userscore = 0;
+var userscoretext = "User: " + userscore + " points!";
 var computerscore = 0;
+var computerscoretext = "Computer: " + computerscore + " points!"
 var winner = 5;
-var compchoicenumber = generatechoicecomputer()
-var compchoicetext = "Computer Chooses: " + choicenumbertotext()
+var computerchooses = "";
+var computerchoice = "Computer Chooses: " + computerchooses;
 
 // RANDOMLY GENERATES A CHOICE FOR COMPUTER (ROCK, PAPER, SCISSORS)
 function generatechoicecomputer() {
@@ -14,10 +16,13 @@ function generatechoicecomputer() {
     ];
     var computerselected = Math.floor(Math.random()*textArray.length);
     if (computerselected == 0) {
+        computerchooses += "Rock";
         return 0;
     } else if (computerselected == 1){
+        computerchooses += "Paper";
         return 1;
     } else {
+        computerchooses += "Scissors";
         return 2;
     }
 }
@@ -83,12 +88,13 @@ function gameover() {
     }
 }
 
-function choicenumbertotext() {
-    if (compchoicenumber == 0) {
+function choicenumbertotext(number) {
+    number = generatechoicecomputer();
+    if (number == 0) {
         return "rock";
-    } else if (compchoicenumber == 1) {
+    } else if (number == 1) {
         return "paper";
-    } else if (compchoicenumber == 2) {
+    } else if (number == 2) {
         return "scissors";
     } else {
         return;
