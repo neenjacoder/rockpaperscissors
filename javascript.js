@@ -7,7 +7,7 @@ var winner = 5;
 var computerchooses = "";
 var computerchoice = "Computer Chooses: " + computerchooses;
 var winnerwinner = "";
-var declarewinner = alert("The " + winnerwinner + " Wins!");
+// var declarewinner = alert("The " + winnerwinner + " Wins!");
 
 // RANDOMLY GENERATES A CHOICE FOR COMPUTER
 function generatechoicecomputer() {

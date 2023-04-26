@@ -1,0 +1,37 @@
+body {
+    margin: 0;
+    background-color: black;
+}
+
+.container {
+    background-color: grey;
+}
+
+.choices, .scores, .declarewinner {
+    margin-left: 50px;
+    margin-right: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.userchoicemessage, .computerchooses, .choices, .scores, .declarewinner {
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+}
+
+.userchoices {
+    display: flex;
+    gap: 20px;
+}
+
+.title {
+    font-size: 150px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+img {
+    height: 250px;
+    width: 175px;
+}

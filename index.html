@@ -9,67 +9,71 @@
     <title>Rock Paper Scissors</title>
 </head>
 <body>
-    <div class="title">
-        Rock Paper Scissors!
-    </div>
-    <div class="user">
-        <div class="userchoicemessage">
-            Make Your Choice:
+    <div class="container">
+        <div class="title">
+            Rock Paper Scissors!
         </div>
-        <div class="userchoices">
-            <div class="userrock">
-                <div class="rockimage">
-                    <!-- <img src="rock.png" alt="rock"> -->
+        <div class="choices">
+            <div class="user">
+                <div class="userchoicemessage">
+                    Make Your Choice:
                 </div>
-                <div class="rockbutton">
-                    <button onclick="playround(0)" class="Rock" type="button">Rock</button>
+                <div class="userchoices">
+                    <div class="userrock">
+                        <div class="rockimage">
+                            <img src="rock.png" alt="rock">
+                        </div>
+                        <div class="rockbutton">
+                            <button onclick="playround(0)" class="Rock" type="button">Rock</button>
+                        </div>
+                    </div>
+                    <div class="userpaper">
+                        <div class="paperimage">
+                            <img src="paper.png" alt="paper">
+                        </div>
+                        <div class="paperbutton">
+                            <button onclick="playround(1)" class="Paper" type="button">Paper</button>
+                        </div>
+                    </div>
+                    <div class="userscissors">
+                        <div class="scissorsimage">
+                            <img src="scissors.png" alt="scissors">
+                        </div>
+                        <div class="scissorsbutton">
+                            <button onclick="playround(2)" class="Scissors" type="button">Scissors</button>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="userpaper">
-                <div class="paperimage">
-                    <!-- <img src="paper.png" alt="paper"> -->
-                </div>
-                <div class="paperbutton">
-                    <button onclick="playround(1)" class="Paper" type="button">Paper</button>
-                </div>
-            </div>
-            <div class="userscissors">
-                <div class="scissorsimage">
-                    <!-- <img src="scissors.png" alt="scissors"> -->
-                </div>
-                <div class="scissorsbutton">
-                    <button onclick="playround(2)" class="Scissors" type="button">Scissors</button>
+            <div class="computer">
+                <div class="computerchooses">
+                    <p id="computerchooses"></p>
+                    <script>
+                        document.getElementById("computerchooses").innerHTML = computerchoice;
+                    </script>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="computer">
-        <div class="computerchooses">
-            <p id="computerchooses"></p>
+        <div class="scores">
+            <div class="userscore">
+                <p id="userscore"></p>
+                <script>
+                    document.getElementById("userscore").innerHTML = userscoretext;
+                </script>
+            </div>
+            <div class="computerscore">
+                <p id="computerscore"></p>
+                <script>
+                    document.getElementById("computerscore").innerHTML = computerscoretext;
+                </script>
+            </div>
+        </div>
+        <div class="declarewinner">
+            <p id="declarewinner"></p>
             <script>
-                document.getElementById("computerchooses").innerHTML = computerchoice;
+                document.getElementById("declarewinner").innerHTML = declarewinner;
             </script>
         </div>
-    </div>
-    <div class="scores">
-        <div class="userscore">
-            <p id="userscore"></p>
-            <script>
-                document.getElementById("userscore").innerHTML = userscoretext;
-            </script>
-        </div>
-        <div class="computerscore">
-            <p id="computerscore"></p>
-            <script>
-                document.getElementById("computerscore").innerHTML = computerscoretext;
-            </script>
-        </div>
-    </div>
-    <div class="declarewinner">
-        <p id="declarewinner"></p>
-        <script>
-            document.getElementById("declarewinner").innerHTML = declarewinner;
-        </script>
     </div>
 </body>
 </html>
