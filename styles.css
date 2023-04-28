@@ -37,3 +37,12 @@ img {
     height: 250px;
     width: 175px;
 }
+
+button {
+    background-color: white;
+    font-size: 30px;
+    border: none;
+    text-align: center;
+    padding: 10px 30px;
+
+}
