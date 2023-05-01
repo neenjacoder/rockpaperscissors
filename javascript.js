@@ -65,7 +65,7 @@ function generatechoicecomputer() {
     ];
     var computerselected = Math.floor(Math.random()*textArray.length);
     if (computerselected == 0) {
-        return 0;
+        return "rock";
     } else if (computerselected == 1){
         return 1;
     } else {
