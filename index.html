@@ -13,38 +13,46 @@
     <div class="title">
         Rock Paper Scissors
     </div>
-    <div class="players">
-        <div class="players" id="userchooses">
+    <div class="gameplayers">
+        <div class="player">
             User Chooses:
             <div class="userchoices">
-                <div class="userchoices" id="rockimage">
+                <button type="useroption" onclick="playgame('rock')">
                     <img src="rock.png" alt="rock hand symbol">
-                </div>
-                <div class="userchoices" id="paperimage">
+                </button>
+                <button type="useroption" onclick="playgame('paper')">
                     <img src="paper.png" alt="paper hand symbol">
-                </div>
-                <div class="userchoices" id="scissorsimage">
+                </button>
+                <button type="useroption" onclick="playgame('scissors')">
                     <img src="scissors.png" alt="scissors hand symbol">
-                </div>  
+                </button>  
             </div>
         </div>
-        <div class="players" id="computerchooses">
+        <div class="player">
             Computer Chooses:
-                <div class="computerchose" id="updateimage">
-                    IMAGE PLACEHOLDER
-                </div>
+            <div class="computerchoices">
+                <img src="question.png" alt="updated image">
+            </div>
         </div>
     </div>
-    <div class="scores">
-        <div class="scores" id="userscore">
+    <div class="overallscores">
+        <div class="scores">
             User Score:
+            <div class="scores">
+                0
+            </div>
         </div>
-        <div class="scores" id="computerscore">
+        <div class="scores">
             Computer Score:
+            <div class="scores">
+                0
+            </div>
         </div>
     </div>
     <div class="gamewinner">
         The Winner Is:
+        <div class="winner">
+            ???
+        </div>
     </div>
-
 </html>
