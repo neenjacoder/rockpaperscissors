@@ -1,48 +1,32 @@
 body {
-    margin: 0;
-    background-color: black;
-}
-
-.container {
     background-color: grey;
 }
 
-.choices, .scores, .declarewinner {
-    margin: 35px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: flex-start;
-}
-
-.userchoicemessage, .computerchooses, .choices, .scores, .declarewinner {
-    font-size: 50px;
+.title, 
+.gamewinner {
+    text-align: center;
+    font-size: 100px;
     font-weight: bold;
-    color: white;
-    margin: 10px;
+    padding: 20px;
 }
 
-.userchoices {
+.gameplayers, 
+.userchoices, 
+.computerchooses, 
+.overallscores {
     display: flex;
+    justify-content: space-around;
+    font-size: 50px;
+    padding: 20px;
     gap: 20px;
 }
 
-.title {
-    font-size: 150px;
+.scores,
+.player {
     font-weight: bold;
-    color: white;
-    text-align: center;
 }
 
 img {
-    height: 250px;
-    width: 175px;
-}
-
-button {
-    background-color: white;
-    font-size: 30px;
-    border: none;
-    text-align: center;
-    padding: 10px 30px;
-
+    width: 150px;
+    height: 200px;
 }
