@@ -9,62 +9,42 @@
     <title>Rock Paper Scissors</title>
 </head>
 <body>
-    <div class="container">
-        <div class="title">
-            Rock Paper Scissors!
-        </div>
-        <div class="choices">
-            <div class="user">
-                <div class="userchoicemessage">
-                    Make Your Choice:
+</body>
+    <div class="title">
+        Rock Paper Scissors
+    </div>
+    <div class="players">
+        <div class="players" id="userchooses">
+            User Chooses:
+            <div class="userchoices">
+                <div class="userchoices" id="rockimage">
+                    <img src="rock.png" alt="rock hand symbol">
                 </div>
-                <div class="userchoices">
-                    <div class="userrock">
-                        <div class="rockimage">
-                            <img src="rock.png" alt="rock">
-                        </div>
-                        <div class="rockbutton">
-                            <button onclick="playround(0)" class="Rock" type="button">Rock</button>
-                        </div>
-                    </div>
-                    <div class="userpaper">
-                        <div class="paperimage">
-                            <img src="paper.png" alt="paper">
-                        </div>
-                        <div class="paperbutton">
-                            <button onclick="playround(1)" class="Paper" type="button">Paper</button>
-                        </div>
-                    </div>
-                    <div class="userscissors">
-                        <div class="scissorsimage">
-                            <img src="scissors.png" alt="scissors">
-                        </div>
-                        <div class="scissorsbutton">
-                            <button onclick="playround(2)" class="Scissors" type="button">Scissors</button>
-                        </div>
-                    </div>
+                <div class="userchoices" id="paperimage">
+                    <img src="paper.png" alt="paper hand symbol">
                 </div>
-            </div>
-            <div class="computer">
-                <div class="computerchoicemessage">
-                    The Computer Chooses:
-                </div>
-                <div class="computerchooses">
-                    Script Display Image
-                </div>
+                <div class="userchoices" id="scissorsimage">
+                    <img src="scissors.png" alt="scissors hand symbol">
+                </div>  
             </div>
         </div>
-        <div class="scores">
-            <div class="userscore">
-                DISPLAY USER SCORE
-            </div>
-            <div class="computerscore">
-                DISPLAY COMPUTER SCORE
-            </div>
-        </div>
-        <div class="declarewinner">
-            DISPLAY WINNER OF GAME
+        <div class="players" id="computerchooses">
+            Computer Chooses:
+                <div class="computerchose" id="updateimage">
+                    IMAGE PLACEHOLDER
+                </div>
         </div>
     </div>
-</body>
+    <div class="scores">
+        <div class="scores" id="userscore">
+            User Score:
+        </div>
+        <div class="scores" id="computerscore">
+            Computer Score:
+        </div>
+    </div>
+    <div class="gamewinner">
+        The Winner Is:
+    </div>
+
 </html>
