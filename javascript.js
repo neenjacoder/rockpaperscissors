@@ -43,14 +43,12 @@ function userchoserock() {
         document.getElementById("winneris").innerText = "User Wins This Round!";
         console.log("User wins")
         checkwinner();
-        resetgame();
     } else {
         computerpoints++;
         document.getElementById("computerscore").innerText = "Computer Score: " + computerpoints;
         document.getElementById("winneris").innerText = "Computer Wins This Round!";
         console.log("Computer wins")
         checkwinner();
-        resetgame(); 
     }
 }
 
@@ -63,15 +61,13 @@ function userchosepaper() {
         document.getElementById("userscore").innerText = "User Score: " + userpoints;
         document.getElementById("winneris").innerText = "User Wins This Round!";
         console.log("User wins")
-        checkwinner();
-        resetgame();    
+        checkwinner();   
     } else if (computer == "scissors") {
         computerpoints++;
         document.getElementById("computerscore").innerText = "Computer Score: " + computerpoints;
         document.getElementById("winneris").innerText = "Computer Wins This Round!";
         console.log("Computer wins")
         checkwinner();
-        resetgame(); 
     } else {
         document.getElementById("winneris").innerText = "This Round Was A Tie!";
         console.log("Tie")
@@ -87,8 +83,7 @@ function userchosescissors() {
         document.getElementById("computerscore").innerText = "Computer Score: " + computerpoints;
         document.getElementById("winneris").innerText = "Computer Wins This Round!";
         console.log("Computer wins")
-        checkwinner();
-        resetgame();  
+        checkwinner(); 
     } else if (computer == "scissors") {
         document.getElementById("winneris").innerText = "This Round Was A Tie!";
         console.log("Tie")
@@ -97,8 +92,7 @@ function userchosescissors() {
         document.getElementById("userscore").innerText = "User Score: " + userpoints;
         document.getElementById("winneris").innerText = "User Wins This Round!";
         console.log("User wins")
-        checkwinner();
-        resetgame();        
+        checkwinner();      
     }
 }
 
@@ -114,4 +108,11 @@ function checkwinner() {
     }
 }
 
-// create a function to reset the game
+function resetgame() {
+    computerpoints = 0;
+    userpoints = 0;
+    document.getElementById("computerscore").innerText = "Computer Score: " + computerpoints;
+    document.getElementById("userscore").innerText = "User Score: " + userpoints;
+    document.getElementById("winneris").innerText = "Game Has Been Reset!";
+    return;
+}
