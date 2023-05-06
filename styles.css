@@ -30,3 +30,9 @@ img {
     width: 150px;
     height: 200px;
 }
+
+.gameover {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
